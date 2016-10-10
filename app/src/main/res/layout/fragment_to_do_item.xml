@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_to_do_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dasyel.dasyelwillems_pset5.Fragments.ToDoItemFragment">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/title"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:hint="@string/title_hint" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/contents"
+        android:textStyle="normal|italic"
+        android:layout_below="@+id/title"
+        android:hint="@string/contents_hint"
+        android:layout_above="@+id/delete_button" />
+
+    <Button
+        android:text="@string/delete_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete_button"
+        android:layout_alignParentBottom="true"
+        android:onClick="deleteNote" />
+</RelativeLayout>

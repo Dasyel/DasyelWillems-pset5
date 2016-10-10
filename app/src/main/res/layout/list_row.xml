@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lrNumberBox">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lrNumber"
+            android:textSize="30sp"
+            android:textStyle="normal|bold|italic"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lrTextBox"
+        android:layout_toRightOf="@+id/lrNumberBox">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lrTitle"
+            android:textStyle="normal|bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lrContents"
+            android:layout_below="@+id/lrTitle"
+            android:textStyle="normal|italic"
+            android:maxLines="2"
+            android:minLines="1" />
+    </RelativeLayout>
+
+</RelativeLayout>
